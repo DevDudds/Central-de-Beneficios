@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central de Benefícios</title>
+    <link rel="shortcut icon" href="./image/images2-_1_.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -48,6 +49,39 @@
         .tab-active .tab-indicator {
             display: block;
         }
+
+        @media (max-width: 680px) {
+            #features {
+                min-width: 100%;
+            }
+            #Central {
+                font-size: 8rem;
+                margin: 30px;
+            }
+
+            #features button {
+                font-size: 25px;
+            }
+        }
+        @media (max-width: 1417px) {
+            #motivo #chave {
+                max-width: 80%;
+            }
+            #motivo div {
+                font-size: 18px
+            }
+            #Central {
+                font-size: 150px;
+            }
+            #pad {
+                padding: 0px 0px 0px;
+                gap: 30px;
+            }
+        }
+
+        html {
+            max-width: 100%;
+        }
     </style>
 </head>
 
@@ -57,11 +91,14 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-8">
-                <div class="font-black text-2xl tracking-tighter cursor-pointer"><a href="#Inicio">Central de Benefícios</a></div>
+                <div class="font-black text-2xl tracking-tighter cursor-pointer"><a href="#Inicio">Central de
+                        Benefícios</a></div>
                 <nav class="hidden md:flex items-center gap-6">
                     <a href="#features" class="text-sm font-medium hover:text-gray-600 transition-colors">Sobre nós</a>
-                    <a href="#areas" class="text-sm font-medium hover:text-gray-600 transition-colors">Áreas de atuação</a>
-                    <a href="#features" class="text-sm font-medium hover:text-gray-600 transition-colors">Contatos</a>
+                    <a href="#areas" class="text-sm font-medium hover:text-gray-600 transition-colors">Áreas de
+                        atuação</a>
+                    <a href="#btn-research"
+                        class="text-sm font-medium hover:text-gray-600 transition-colors">Contatos</a>
                 </nav>
             </div>
         </div>
@@ -78,13 +115,14 @@
                     <p class="text-xl text-gray-600 mb-10 max-w-md leading-relaxed">
                         Você não está sozinho! Orientamos cada passo para reverter negativas. </p>
                     <div class="flex flex-wrap gap-4">
-                        <button
-                            class="bg-black text-white px-10 py-4 rounded-md font-semibold hover:bg-gray-800 transition-all shadow-lg hover:shadow-black/20"><a href="#features">Saiba mais!</a>
-                        </button>
-                        <button
-                            class="border border-gray-300 px-10 py-4 rounded-md font-semibold hover:bg-gray-50 transition-all"><a href="#features">
-                            Contate-nos</a>
-                        </button>
+                        <a href="#features"><button
+                                class="bg-black text-white px-10 py-4 rounded-md font-semibold hover:bg-gray-800 transition-all shadow-lg hover:shadow-black/20">Saiba
+                                mais!
+                            </button></a>
+                        <a href="#btn-research"> <button
+                                class="border border-gray-300 px-10 py-4 rounded-md font-semibold hover:bg-gray-50 transition-all">
+                                Contate-nos
+                            </button></a>
                     </div>
                 </div>
 
@@ -124,7 +162,8 @@
                             Não acompanhe as mudanças, molde-as.
                         </h2>
                         <p class="text-xl max-w-md mx-auto opacity-90 leading-relaxed font-medium">
-                            A Central de Benefícios está aqui para ajudar você a navegar pelas complexidades dos benefícios, garantindo que você aproveite ao máximo o que merece.
+                            A Central de Benefícios está aqui para ajudar você a navegar pelas complexidades dos
+                            benefícios, garantindo que você aproveite ao máximo o que merece.
                         </p>
                     </div>
                 </div>
@@ -153,8 +192,10 @@
                             Sobre nós
                         </h3>
                         <p id="tab-desc" class="text-2xl text-gray-600 mb-10 max-w-md leading-relaxed">
-                            A Central de Benefícios é dedicada a ajudar você a entender, gerenciar e maximizar seus benefícios. Nossa equipe de especialistas está pronta para 
-                            fornecer suporte personalizado e orientações claras para que você possa tomar decisões informadas sobre seus benefícios.
+                            A Central de Benefícios é dedicada a ajudar você a entender, gerenciar e maximizar seus
+                            benefícios. Nossa equipe de especialistas está pronta para
+                            fornecer suporte personalizado e orientações claras para que você possa tomar decisões
+                            informadas sobre seus benefícios.
                         </p>
                         <a href="#"
                             class="inline-flex items-center gap-3 text-lg font-bold border-b-2 border-black pb-2 hover:opacity-70 transition-opacity">
@@ -175,9 +216,10 @@
         </section>
 
         <!-- Logo Ticker -->
-        <section class="py-32 px-4 bg-white">
-            <div class="max-w-7xl mx-auto text-center">
-                <p class="text-3xl mb-20 font-medium tracking-tight">Da Bahia para o Brasil, conheça a Central de Benefícios</p>
+        <section class="py-32 px-4 bg-white" id="motivo">
+            <div class="max-w-7xl mx-auto text-center" id="chave">
+                <p class="text-3xl mb-20 font-medium tracking-tight">Da Bahia para o Brasil, conheça a Central de
+                    Benefícios</p>
                 <div
                     class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-12 items-center opacity-30 grayscale contrast-125">
                     <div class="text-2xl font-black italic">Amparo</div>
@@ -203,13 +245,14 @@
                             class="text-[11px] font-extrabold tracking-[0.2em] px-4 py-2 bg-white border border-gray-200 rounded-full shadow-sm">DISPONIBILIDADE</span>
                     </div>
                     <h2 class="text-6xl font-medium tracking-tight mb-8 leading-tight">
-                        
+
                     </h2>
                     <p class="text-2xl text-gray-600 mb-12 max-w-lg leading-relaxed">
-                        A Central de Benefícios oferece soluções flexíveis que se adaptam às suas necessidades, garantindo que você tenha acesso aos seus benefícios quando e onde precisar.
+                        A Central de Benefícios oferece soluções flexíveis que se adaptam às suas necessidades,
+                        garantindo que você tenha acesso aos seus benefícios quando e onde precisar.
                     </p>
                     <div class="flex gap-6">
-                        
+
                     </div>
                 </div>
 
@@ -247,7 +290,8 @@
                             <span
                                 class="text-[11px] font-black tracking-[0.2em] text-gray-400 uppercase">ATENDIMENTO</span>
                         </div>
-                        <p class="text-lg font-medium text-black leading-tight">Oferecemos suporte humanizado e orientação clara em todas as etapas do seu atendimento.</p>
+                        <p class="text-lg font-medium text-black leading-tight">Oferecemos suporte humanizado e
+                            orientação clara em todas as etapas do seu atendimento.</p>
                     </div>
                     <div
                         class="bg-white/90 backdrop-blur p-10 rounded-3xl shadow-sm border border-white/50 hover:bg-white transition-colors">
@@ -256,7 +300,8 @@
                             <span
                                 class="text-[11px] font-black tracking-[0.2em] text-gray-400 uppercase">ORIENTAÇÃO</span>
                         </div>
-                        <p class="text-lg font-medium text-black leading-tight">Analisamos sua situação e indicamos os melhores caminhos para lidar com negativas de benefícios.</p>
+                        <p class="text-lg font-medium text-black leading-tight">Analisamos sua situação e indicamos os
+                            melhores caminhos para lidar com negativas de benefícios.</p>
                     </div>
                     <div
                         class="bg-white/90 backdrop-blur p-10 rounded-3xl shadow-sm border border-white/50 hover:bg-white transition-colors">
@@ -265,7 +310,8 @@
                             <span
                                 class="text-[11px] font-black tracking-[0.2em] text-gray-400 uppercase">CONFIANÇA</span>
                         </div>
-                        <p class="text-lg font-medium text-black leading-tight">Atuamos com transparência, responsabilidade e foco nos seus direitos.</p>
+                        <p class="text-lg font-medium text-black leading-tight">Atuamos com transparência,
+                            responsabilidade e foco nos seus direitos.</p>
                     </div>
                 </div>
             </div>
@@ -304,21 +350,20 @@
                     </ul>
                 </div>
 
-                
+
             </div>
 
-            <div class="border-t border-gray-200 pt-16 flex flex-col md:flex-row justify-between items-end gap-12">
+            <div class="border-t border-gray-200 pt-16 flex flex-col md:flex-row items-end" id="pad">
                 <div
                     class="text-[12rem] md:text-[20rem] font-black tracking-tighter leading-none opacity-5 select-none -mb-8 pointer-events-none">
-                    Central</div>
+                    <h1 id="Central">Central</h1>
+                </div>
                 <div class="flex flex-col items-end gap-4 pb-10">
                     <div class="flex gap-6 mb-4">
                         <a href="#"
                             class="text-[10px] font-black tracking-widest uppercase hover:opacity-50">Instagram</a>
-                        <a href="#"
-                            class="text-[10px] font-black tracking-widest uppercase hover:opacity-50"></a>
-                        <a href="#"
-                            class="text-[10px] font-black tracking-widest uppercase hover:opacity-50"></a>
+                        <a href="#" class="text-[10px] font-black tracking-widest uppercase hover:opacity-50"></a>
+                        <a href="#" class="text-[10px] font-black tracking-widest uppercase hover:opacity-50"></a>
                     </div>
                     <div class="text-[10px] text-gray-400 font-bold tracking-widest uppercase">
                         © 2026 Central de Benefícios. Todos os direitos reservados.
